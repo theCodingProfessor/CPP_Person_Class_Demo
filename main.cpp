@@ -1,14 +1,14 @@
 // Clinton Garwood
-// Created by ncc306 on 3/19/22.
-// Demo Code
+// Created 2022, Updated 2024
+// Main Driver for Person Class
 
-using namespace std;
 #include <string>
 #include <vector>
 #include <iostream>
 #include "Person.h"
 #include "Student.h"
 #include <algorithm> // we use this to call sort() and find()
+using namespace std;
 
 auto lambdaSort = [] (Student S1, Student S2) -> bool
 {
@@ -20,7 +20,35 @@ auto lambdaSortGPA = [] (Student S1, Student S2) -> bool
     return S1.get_grade_point_average() > S2.get_grade_point_average();
 };
 
+void test_person(){
+    // Call Each Person Constructor
+    Person T_1;
+    Person T_2(2024);
+    Person T_3(2200, "Rahyea", "Alighten");
+//    T_1.report_person_data();
+//    T_2.report_person_data();
+//    T_3.report_person_data();
+};
+
+void test_student(){
+    // Call Each Person Constructor
+    Student T_1;
+    Student T_2(2024);
+    Student T_3(2200, "Rahyea", "Alighten");
+    Student T_4(Person P_1);
+
+//    S_1.report_person_data();
+//    S_2.report_person_data();
+//    S_3.report_person_data();
+//    S_4.report_person_data();
+};
+
 int main(){
+
+// Project Tests
+test_person();
+test_student();
+
 Student S_1("Adam", 100001, 3.4, "Undergraduate", 2000, "Raleigh", "Rousseau");
 Student S_2("Alice", 100010, 3.7, "Undergraduate", 2001, "Raleigh", "Riagan");
 Student S_3("Andy", 100011, 3.9, "Post-Graduate", 1997, "Raleigh", "Rasputin");
@@ -44,21 +72,22 @@ Student S_20("Ariana", 110011, 3.3, "Graduate", 1999, "Richmond", "Robinson");
 
 std::vector<Student> Student_Body{S_1,S_2,S_3,S_4,S_5,S_6,S_7,S_8,S_9,S_10,S_11,S_12,S_13,S_14,S_15,S_16,S_17,S_18,S_19,S_20,};
 
-// Sort all print all Studnets by last name, first name
+// Sort all print all Students by last name, first name
 std::sort(Student_Body.begin(), Student_Body.end(), lambdaSort);
 cout << "\n\tStudents by Last Name, First Name: " << endl;
 for (Student s : Student_Body)
-  cout << "\t" << s.get_student_p_name() << s.get_preferred_name() << endl;
+  cout << "\t" << s.get_student_p_name() << ", " << s.get_preferred_name() << endl;
 
 // Access an item from the vector
-// Below calls the for the student id from the zeroith item in the vector of objects
+// Below calls the for the student id from the zeroth item in the vector of objects
 //    cout << Student_Body[0].get_student_id();
 
 // Report the names and the degree being pursued for students with a 4.0 GPA
+cout << "\nHigh Honors Academic Report: " << endl;
 float max_gpa = 4.0;
     for (int x = 0; x<20; x++){
       // cout << Student_Body[x].get_grade_point_average() << endl;
-      if (Student_Body[x].get_grade_point_average() == 4.0){
+      if (Student_Body[x].get_grade_point_average() == max_gpa){
         cout << Student_Body[x].get_preferred_name() << " " << Student_Body[x].get_student_p_name()
         << " who is in the " << Student_Body[x].get_degree_pursued() << " degree program, has a 4.0 GPA." << endl; }
     }
@@ -85,10 +114,10 @@ float max_gpa = 4.0;
             DR.push_back(Student_Body[y]);
             dr_count++; dr_total += Student_Body[y].get_grade_point_average();}
         }
-    cout << "\n\tThere are " << dr_count << " Doctoral Students with an average GPA of " << dr_total/dr_count << endl;
-    cout << "\tThere are " << pg_count << " Post-Graduate Students with an average GPA of " << pg_total/pg_count << endl;
-    cout << "\tThere are " << dr_count << " Graduate Students with an average GPA of " << gr_total/gr_count << endl;
-    cout << "\tThere are " << ug_count << " Undergraduate Students with an average GPA of " << ug_total/ug_count << endl;
+    cout << "\n\tThere are " << dr_count << " Doctoral Students with an average GPA of " << dr_total/float(dr_count) << endl;
+    cout << "\tThere are " << pg_count << " Post-Graduate Students with an average GPA of " << pg_total/float(pg_count) << endl;
+    cout << "\tThere are " << dr_count << " Graduate Students with an average GPA of " << gr_total/float(gr_count) << endl;
+    cout << "\tThere are " << ug_count << " Undergraduate Students with an average GPA of " << ug_total/float(ug_count) << endl;
 
 // 3)  Compute the most pursued degree:
     if ( (ug_count > gr_count) and (ug_count > pg_count) and (ug_count > dr_count) ){
@@ -117,20 +146,20 @@ float max_gpa = 4.0;
     for (Student s : UG)
         cout << "\t" << s.get_student_p_name() << " GPA : " << s.get_grade_point_average() << endl;
 
-    // Create Vectors (of Studnets) for each City
-    vector<std::string> city_names;
-    vector<Student> student_cities;
-    std::string this_city;
-    std::string v_this_city;
-    for (Student each : Student_Body) {
-        this_city = each.get_student_p_location(); // name of the city
-        v_this_city = "v_" + this_city; // vector name for the city
-        if (std::find(city_names.begin(), city_names.end(), this_city) == city_names.end()) {
-            // Add the city name to the vector list
-            cout << this_city << endl;
-            city_names.push_back(this_city);
-        }
-    }
+    // Create Vectors (of Students) for each City
+//    vector<std::string> city_names;
+//    vector<Student> student_cities;
+//    std::string this_city;
+//    std::string v_this_city;
+//    for (Student each : Student_Body) {
+//        this_city = each.get_student_p_location(); // name of the city
+//        v_this_city = "v_" + this_city; // vector name for the city
+//        if (std::find(city_names.begin(), city_names.end(), this_city) == city_names.end()) {
+//            // Add the city name to the vector list
+//            cout << this_city << endl;
+//            city_names.push_back(this_city);
+//        }
+//    }
 //    for (std::string s_city : city_names) {
 //        std::string sin_city;
 //        cin >> sin_city;

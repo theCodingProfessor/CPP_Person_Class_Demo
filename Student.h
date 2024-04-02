@@ -1,15 +1,16 @@
 // Clinton Garwood
-// Created by ncc306 on 3/18/22.
-// Lab 12: Simple Inheritance
+// Created 2022, Updated 2024
+// Main Driver: Inheritance Demo as Person<-Student as Parent<-Child
 
 #include <iostream>
 #include <vector>
 #include <string>
-using namespace std;
 #include "Person.h"
 
-#ifndef PERSON_STUDENT_H
-#define PERSON_STUDENT_H
+using namespace std;
+
+#ifndef STUDENT_H
+#define STUDENT_H
 
 class Student : public Person, public basic_string<char> {
 public:
@@ -19,7 +20,7 @@ public:
 
     // Student Constructor Given A Person Object (which may or many not have a date,location,name)
     // This constructor must prompt for student fields as well as check the Person Object for data
-    Student(Person);
+    explicit Student(Person);
 
     // Student Constructor Given no Student Data, and data for a Person Object (but no person object)
     // This constructor must prompt for student fields
@@ -34,9 +35,10 @@ public:
     // Student Constructor Given data for a Student Object, and without Person object
     Student(std::string, int, float, std::string);
 
+    // Get Student_Person Fields
     std::string get_preferred_name();
-    int get_student_id();
-    float get_grade_point_average();
+    int get_student_id() const;
+    float get_grade_point_average() const;
     std::string get_degree_pursued();
     std::string get_student_p_name();
     std::string get_student_p_location();
@@ -45,24 +47,22 @@ public:
 
 protected:
 
-    // Simple setters (no prompts) for updating Student_Person Fields
+    // Set Student_Person Fields, (no prompts)
     void set_preferred_name(std::string);
     void set_student_id(int);
     void set_grade_point_average(float);
     void set_degree_pursued(std::string);
 
-    // Setters for Establishing Initial Data in Student Fields
-    // These methods include prompts for fields
-    std::string establish_student_name();
-    int establish_student_id_number();
-    float establish_student_gpa();
-    std::string establish_student_degee_pursuit();
+    // Set Initial Data in Student Fields (with prompts)
+    static std::string establish_student_name();
+    static int establish_student_id_number();
+    static float establish_student_gpa();
+    static std::string establish_student_degree_pursuit();
 
-    //SGetters for Establishing Initial Data in Student_Person Fields
-    // These methods include prompts for fields
-    int establish_year();
-    std::string establish_loc();
-    std::string establish_name();
+    // Set Initial Data in Student_Person Fields (with prompts)
+    static int establish_year();
+    static std::string establish_loc();
+    static std::string establish_name();
 
 private:
     std::string preferred_name;
@@ -73,5 +73,4 @@ private:
 
 };
 
-
-#endif //PERSON_STUDENT_H
+#endif // STUDENT_H
