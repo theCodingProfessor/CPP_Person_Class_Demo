@@ -7,7 +7,7 @@ Branch used to commit/push this file
 #### Branch Author/Location:
 Local dev environment, JetBrains Student License
 #### To-Do List:
-update and push this markdown file
+update and push this markdown file.
 #### Branch Details:
 Pull requests to https://github.com/theCodingProfessor/CPP_Person_Class_Demo
 #### Branch Status:
