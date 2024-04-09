@@ -5,4 +5,8 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 
-add_executable(person Person.cpp Person.h Student.cpp Student.h main.cpp)
+add_executable(person Person.cpp Person.h Student.cpp Student.h main.cpp
+        docs/challenge/anthonyc/person.cpp
+        docs/challenge/anthonyc/person.h
+        docs/challenge/anthonyc/main.cpp
+)
