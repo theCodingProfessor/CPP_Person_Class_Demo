@@ -1,3 +1,3 @@
-Camden Welander
+Tyler Mccoy
 
 working on the friend assignment
