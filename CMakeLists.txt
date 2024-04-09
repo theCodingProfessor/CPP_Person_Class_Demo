@@ -7,4 +7,6 @@ include_directories(.)
 
 add_executable(person Person.cpp Person.h Student.cpp Student.h main.cpp
         docs/challenge/anthonyc/person.cpp
-        docs/challenge/anthonyc/person.h)
+        docs/challenge/anthonyc/person.h
+        docs/challenge/anthonyc/main.cpp
+        docs/challenge/anthonyc/main.h)
