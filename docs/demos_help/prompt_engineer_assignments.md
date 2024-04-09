@@ -1,3 +1,9 @@
+## Prompt Engineering
+
+The prompts below are designed using prompt engineering principles, and submitted to {openai chatgpt turbo v3 } as a registered .edu user account. 
+
+---
+
 """ Can you markup the following assignment for presentation into a .md file """ {assignment text } """
 
 """
