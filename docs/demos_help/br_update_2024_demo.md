@@ -1,5 +1,3 @@
-
-## Active Branch Notes: Augstin was here
 #### Branch Name:
 update_2024_demo
 #### Branch Overview:
