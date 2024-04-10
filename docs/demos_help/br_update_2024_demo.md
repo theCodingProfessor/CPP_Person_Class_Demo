@@ -1,5 +1,3 @@
-
-## Active Branch Notes: 
 #### Branch Name:
 update_2024_demo
 #### Branch Overview:
