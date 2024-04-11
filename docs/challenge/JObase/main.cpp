@@ -1,8 +1,11 @@
 #include <iostream>
-using namespace std;
+#include "player.h"
 
 int main(){
-    cout << "hi guys" << endl;
+    std::cout << "Implementatin of Inheritance using OOP\n" << std::endl;
+
+    Player player;
+    player.displayPlayerInfo();
 
     return 0;
 }
