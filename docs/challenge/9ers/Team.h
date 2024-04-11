@@ -1,6 +1,9 @@
-//
-// Created by Brad on 4/11/24.
-//
+/***************************************************************************************
+ *  File: Team.h
+ *  Author: Brad Kinney
+ *  Date: April 11, 2024
+ *  Description: Header file for the Team class.
+ ***************************************************************************************/
 
 #ifndef PERSON_TEAM_H
 #define PERSON_TEAM_H
