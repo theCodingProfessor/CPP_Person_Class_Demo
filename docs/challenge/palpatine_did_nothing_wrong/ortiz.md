@@ -1,3 +1,3 @@
 Theme: Friend classes
 Name: Isaac
-Partner: Will
+Partner: Will Greaney
