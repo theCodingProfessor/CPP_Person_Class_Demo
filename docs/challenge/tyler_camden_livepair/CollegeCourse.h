@@ -23,12 +23,12 @@ private:
     static const std::string defaultCourseName;
     std::string courseName;
     std::vector<MyStudent*> students;
+    void displayStudents() const;
     friend class MyStudent; // MyStudent class is a friend
 public:
     explicit CollegeCourse(std::string name);
     explicit CollegeCourse();
     void enrollStudent(MyStudent* student);
-    void displayStudents() const; // Public method
     void displayCourseName() const;
 };
 
