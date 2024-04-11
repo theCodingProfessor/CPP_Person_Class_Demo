@@ -1,9 +1,10 @@
-#include "Person.h"
-#include "IdClass.h"
-#include "Person.cpp"
-#include "IdClass.cpp"
+#include "Person.h"    // Include the definition of the Person class
+#include "IdClass.h"   // Include the definition of the IdClass class
+#include "Person.cpp"  // Include the implementation of the Person class
+#include "IdClass.cpp" // Include the implementation of the IdClass class
 
 int main() {
+    // Create two Person objects
     Person person1("Antonio", 1, "CSCE306");
     Person person2("Angel", 3, "CSCE306");
 
@@ -16,12 +17,25 @@ int main() {
     IdClass id1(idNumber1);
     IdClass id2(idNumber2);
 
+    std::cout << "\n";
+    std::cout << "\n";
+    // Display information about person1
+    person1.displayInfo();
+    // Display the ID of person1
     person1.displayId(id1);
-    id1.displayID(person1);
 
+    std::cout << "\n";
+    std::cout << "\n";
+    
+    // Display information about person2
+    person2.displayInfo();
+    // Display the ID of person2
     person2.displayId(id2);
-    id2.displayID(person2);
 
+    std::cout << "\n";
+    std::cout << "\n";
+
+    // Variables to store user input
     std::string name;
     int year;
     std::string course;
@@ -33,15 +47,17 @@ int main() {
     std::cin >> year;
     std::cout << "Enter course: ";
     std::cin >> course;
+    std::cout << "\n";
+    std::cout << "\n";
 
     // Increment last assigned ID number and use it for the new person
     int idNumber3 = lastAssignedId++;
     IdClass id3(idNumber3);
     Person person3(name, year, course);
+    // Display information about the newly created person
+    person3.displayInfo();
+    // Display the ID of the newly created person
     person3.displayId(id3);
-    id3.displayID(person3);
 
     return 0;
 }
-
-
