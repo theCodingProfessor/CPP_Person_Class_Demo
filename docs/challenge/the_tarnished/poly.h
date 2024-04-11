@@ -12,28 +12,28 @@ class BankAccount {
 
 class Checking : public BankAccount {
     private:
-        double balance;
+        double balanceAmount;
     public:
-        Checking(double balance): balance(balance) {}
+        Checking(double balanceAmount): balanceAmount(balanceAmount) {}
         double balance() override;
 };
 
 class Savings : public BankAccount {
     private:
-        double balance;
+        double balanceAmount;
         double interestRate;
         float years;
     public:
-        Savings(double balance, double interestRate, double years): balance(balance), interestRate(interestRate), years(years) {}
+        Savings(double balanceAmount, double interestRate, double years): balanceAmount(balanceAmount), interestRate(interestRate), years(years) {}
         double balance() override;
 };
 
 class Credit : public BankAccount {
     private:
-        double balance;
+        double balanceAmount;
         int creditLimit;
     public:
-        Credit(double balance, int creditLimit): balance(balance), creditLimit(creditLimit){}
+        Credit(double balanceAmount, int creditLimit): balanceAmount(balanceAmount), creditLimit(creditLimit){}
         double balance() override;
         int creditLimit() { return creditLimit; }
 };
