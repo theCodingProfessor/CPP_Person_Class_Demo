@@ -2,25 +2,26 @@
 // Demonstrates the use of a friend class, and how it can access private data/methods of its friend.
 // Created by Tyler McCoy and Camden Welander on 4/11/24.
 
-#include "MyStudent.h"
-#include "CollegeCourse.h"
+#include "MyStudent.h"  // Including the header file for MyStudent class
+#include "CollegeCourse.h"  // Including the header file for CollegeCourse class
 
 int main() {
-    MyCourse course("Object Oriented Software Development");
+    // Creating a CollegeCourse object
+    CollegeCourse course;
+    CollegeCourse course1("Mathematics");
 
-    // Create a student using default constructor
+    // Creating students
     MyStudent student1;
+    MyStudent student2("Bob", 987654321);
 
-    // Create a student with custom name and ID
-    MyStudent student2("Camden", 123456789);
-
-    // Enroll students in the course
+    // Enrolling students in the course
     course.enrollStudent(&student1);
     course.enrollStudent(&student2);
+    course1.enrollStudent(&student1);
 
-    // Accessing displayStudents through MyStudent friend class
-    student1.displayEnrolledStudents(course);
-    student2.displayEnrolledStudents(course);
+    // Displaying enrolled students
+    MyStudent::displayEnrolledStudents(course);  // Displaying enrolled students for course
+    MyStudent::displayEnrolledStudents(course1); // Displaying enrolled students for course1
 
     return 0;
 }
