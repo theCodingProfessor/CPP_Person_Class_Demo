@@ -4,9 +4,10 @@
 *   Author: Camden Welander (Partnered with Tyler McCoy)
 *   NCC CSCE 306 Object Oriented Programming Spring 2024
 *   Live Review/Pair Programming - Friend Class system
-*   Description: We establish a friend classes, in the style of
- *   students in a course, with the course being the main class and
- *   the students being the friend class
+*   Description: We establish a friend class system where CollegeCourse
+*   is the main class and MyStudent is the friend class. This header
+*   file declares the CollegeCourse class, including its private data
+*   members and public member functions.
 *
 *******************************************************************/
 
@@ -20,16 +21,16 @@ class MyStudent; // Forward declaration of MyStudent class
 
 class CollegeCourse {
 private:
-    static const std::string defaultCourseName;
-    std::string courseName;
-    std::vector<MyStudent*> students;
-    void displayStudents() const;
-    friend class MyStudent; // MyStudent class is a friend
+    static const std::string defaultCourseName; // Default course name
+    std::string courseName; // Name of the course
+    std::vector<MyStudent*> students; // Vector to store enrolled students
+    void displayStudents() const; // Method to display enrolled students
+    friend class MyStudent; // MyStudent class is a friend class
 public:
-    explicit CollegeCourse(std::string name);
-    explicit CollegeCourse();
-    void enrollStudent(MyStudent* student);
-    void displayCourseName() const;
+    explicit CollegeCourse(std::string name); // Parameterized constructor
+    explicit CollegeCourse(); // Default constructor
+    void enrollStudent(MyStudent* student); // Method to enroll a student in the course
+    void displayCourseName() const; // Method to display the course name
 };
 
 #endif // COLLEGECOURSE_H

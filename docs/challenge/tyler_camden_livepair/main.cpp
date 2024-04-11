@@ -2,8 +2,8 @@
 // Demonstrates the use of a friend class, and how it can access private data/methods of its friend.
 // Created by Tyler McCoy and Camden Welander on 4/11/24.
 
-#include "MyStudent.h"
-#include "CollegeCourse.h"
+#include "MyStudent.h"  // Including the header file for MyStudent class
+#include "CollegeCourse.h"  // Including the header file for CollegeCourse class
 
 int main() {
     // Creating a CollegeCourse object
@@ -20,10 +20,8 @@ int main() {
     course1.enrollStudent(&student1);
 
     // Displaying enrolled students
-    MyStudent::displayEnrolledStudents(course);
-    MyStudent::displayEnrolledStudents(course1);
+    MyStudent::displayEnrolledStudents(course);  // Displaying enrolled students for course
+    MyStudent::displayEnrolledStudents(course1); // Displaying enrolled students for course1
 
     return 0;
 }
-
-
