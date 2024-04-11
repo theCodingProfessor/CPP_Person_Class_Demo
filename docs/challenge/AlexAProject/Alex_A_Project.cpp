@@ -7,6 +7,8 @@
 // the chractor sheet trait but includes extra stuff like religon, species.
 //
 
+// MAJOR DO NOT INCLUDE CHRACTOR SHEET IN  CMAKELIST.TXT BECAUSE I COMBINE BOTH IN THIS FILES
+
 #include "Alex_A_Project.h"
 
 // Implementation of characterSheet member functions
