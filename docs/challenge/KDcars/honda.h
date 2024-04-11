@@ -8,7 +8,7 @@ using namespace std;
 #ifndef HONDA_H
 #define HONDA_H
 
-class honda : public Cars{
+class honda : public cars{
 public:
     string get_model_name();
     
