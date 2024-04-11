@@ -1,3 +1,5 @@
+
+## Active Branch Notes: 
 #### Branch Name:
 update_2024_demo
 #### Branch Overview:
@@ -11,12 +13,10 @@ Pull requests to https://github.com/theCodingProfessor/CPP_Person_Class_Demo
 #### Branch Status:
 This will be a multiple-use active branch
 #### Notes and Comments:
-br_live_demo_2024
-be_update_2024_demo
+br_sotiroski
 --- 
 #### Known Branches:
 live_demo_2024
-Camden_Welander_md_file
 
 ---
 # Known Retired Branch Data Follows
