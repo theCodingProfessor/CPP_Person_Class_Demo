@@ -8,3 +8,7 @@ Person::Person(string name, int year, string course){
     this.year = year;
     this.course = course;
 }
+
+void Person::displayIdClass(const IdClass& ID){
+    cout << name << "'s ID number is: " << ID.getIdNumber
+}
