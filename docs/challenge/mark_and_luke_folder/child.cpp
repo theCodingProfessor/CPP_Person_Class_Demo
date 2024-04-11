@@ -1,3 +1,11 @@
+/*
+  File: Rectangle.hpp
+  Author: Mark & Luke
+  Date: 4/11/24
+  Description: Header file for the Rectangle class, a child class of Shape.
+                 Header file for the Circle class, a child class of Shape.
+*/
+
 #ifndef RECTANGLE_HPP
 #define RECTANGLE_HPP
 
