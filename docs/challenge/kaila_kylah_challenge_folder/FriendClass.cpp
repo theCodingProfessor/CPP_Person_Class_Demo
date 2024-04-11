@@ -1,12 +1,10 @@
 //
-// Created by laren on 4/11/2024.
+// Created by Kylah Fulghum on 4/11/2024.
 //
 
-#include "Employee.h"
+#include "PayrollSystem.h"
 
-Employee::Employee(const std::string& name, int employeeID, double salary)
-    : name(name), employeeID(employeeID), salary(salary) {}
-
-void Employee::setSalary(double newSalary) {
-    salary = newSalary;
+double PayrollSystem::calculateSalary(const Employee& employee) const {
+    // Example calculation (replace with actual implementation)
+    return employee.salary * 12; // Assuming annual salary
 }
