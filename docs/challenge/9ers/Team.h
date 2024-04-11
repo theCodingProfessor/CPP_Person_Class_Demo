@@ -18,6 +18,7 @@ protected:
 
 public:
     Team(string name, string city);
+    void display();
 };
 
 #endif //PERSON_TEAM_H
