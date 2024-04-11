@@ -1,14 +1,2 @@
-#include "honda.h"
+#include <iostream>
 
-
-class cars {
-    public:
-    int mileage;
-
-
-
-
-
-
-
-}
