@@ -7,8 +7,9 @@
 
 #include "PrimaryClass.h"
 
-class FriendClass {
-
+class Friend {
+ public:
+        void showPrimary(PrimaryClass obj);
 };
 
 
