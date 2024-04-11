@@ -1,3 +1,10 @@
+//--------------------------------------------------------------------
+// Name: Tristan Merlin
+// Class: CSCE 306
+// File name: Player.h
+// Project: Live Code 3
+//--------------------------------------------------------------------
+
 #ifndef PLAYER_H
 #define PLAYER_H
 

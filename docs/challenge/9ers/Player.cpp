@@ -1,3 +1,10 @@
+//--------------------------------------------------------------------
+// Name: Tristan Merlin
+// Class: CSCE 306
+// File name: Player.cpp
+// Project: Live Code 3
+//--------------------------------------------------------------------
+
 #include "Player.h"
 #include <iostream>
 using namespace std;

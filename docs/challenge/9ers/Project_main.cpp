@@ -1,6 +1,7 @@
 //--------------------------------------------------------------------
 // Name: Tristan Merlin and Bradly Kinney
 // Class: CSCE 306
+// File name: Project_main.cpp
 // Project: Live Code 3
 //--------------------------------------------------------------------
 #include "Player.h"
