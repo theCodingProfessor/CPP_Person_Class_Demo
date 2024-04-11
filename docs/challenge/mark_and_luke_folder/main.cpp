@@ -1,3 +1,11 @@
+/*
+  File: main.cpp
+  Author: Mark & Luke
+  Date: 4/11/24
+
+  Description: Main file to demonstrate the usage of Shape, Rectangle, and Circle classes.
+*/
+
 #include "Shape.hpp"
 #include "Rectangle.hpp"
 #include "Circle.hpp"
@@ -19,4 +27,5 @@ int main() {
 
     return 0;
 }
+
 
