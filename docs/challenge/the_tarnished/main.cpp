@@ -8,5 +8,7 @@
 #include "poly.h"
 
 int main() {
+    Checking checking(1000);
     
+
 }

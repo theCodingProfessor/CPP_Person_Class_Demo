@@ -35,7 +35,7 @@ class Credit : public BankAccount {
     public:
         Credit(double balanceAmount, int creditLimit): balanceAmount(balanceAmount), creditLimit(creditLimit){}
         double balance() override;
-        int creditLimit() { return creditLimit; }
+        int creditUsage() { return balanceAmount / creditLimit; }
 };
 
 #endif
