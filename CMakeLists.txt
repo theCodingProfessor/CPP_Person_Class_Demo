@@ -7,4 +7,6 @@ include_directories(.)
 
 add_executable(person Person.cpp Person.h Student.cpp Student.h main.cpp
         docs/challenge/kaila_kylah_challenge_folder/FriendClass.cpp
-        docs/challenge/kaila_kylah_challenge_folder/FriendClass.h)
+        docs/challenge/kaila_kylah_challenge_folder/FriendClass.h
+        docs/challenge/kaila_kylah_challenge_folder/PrimaryClass.cpp
+        docs/challenge/kaila_kylah_challenge_folder/Main2.cpp)
