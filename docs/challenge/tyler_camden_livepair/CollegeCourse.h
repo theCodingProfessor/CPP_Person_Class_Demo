@@ -13,26 +13,23 @@
 #ifndef COLLEGECOURSE_H
 #define COLLEGECOURSE_H
 
-#include <string>
+#include <iostream>
+#include <vector>
 
-class MyStudent; // Forward declaration of the friend class
+class MyStudent; // Forward declaration of MyStudent class
 
 class CollegeCourse {
 private:
+    static const std::string defaultCourseName;
     std::string courseName;
-    std::string professor;
-    friend class MyStudent;
-    void displayStudents() const;
-    friend class Student; // Declare Student class as a friend
-
+    std::vector<MyStudent*> students;
+    friend class MyStudent; // MyStudent class is a friend
 public:
-    CollegeCourse(const std::string& name, const std::string& times, int seats, const std::string& prof);
-    std::string getCourseName() const;
-    void setCourseName(const std::string& name);
-    std::string getProfessor() const;
-    void setProfessor(const std::string& prof);
-    void displayCourseInfo() const;
-    void enrollStudents(MyStudent* student);
-    };
+    explicit CollegeCourse(std::string name);
+    explicit CollegeCourse();
+    void enrollStudent(MyStudent* student);
+    void displayStudents() const; // Public method
+    void displayCourseName() const;
+};
 
 #endif // COLLEGECOURSE_H
