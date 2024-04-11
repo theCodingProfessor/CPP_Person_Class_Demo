@@ -1,31 +1,35 @@
-/*
-  File: main.cpp
-  Author: Mark & Luke
-  Date: 4/11/24
+/**
+ * File: main.cpp
+ * Author: [Author Name]
+ * Date: [Date]
+ * Description: This file contains the main function demonstrating the usage
+ * of the Shape class and its derived class Rectangle. It creates objects of
+ * the Rectangle class, demonstrates polymorphic behavior by using pointers
+ * to Shape, and displays information about the rectangles.
+ */
 
-  Description: Main file to demonstrate the usage of Shape, Rectangle, and Circle classes.
-*/
-
-#include "Shape.hpp" // Include the Shape class header
-#include "Rectangle.hpp" // Include the Rectangle class header
-#include "Circle.hpp" // Include the Circle class header
 #include <iostream>
+#include "parent.h"
+#include "child.h"
 
 int main() {
-    Rectangle rectangle(4, 5); // Create a Rectangle object
-    Circle circle(3); // Create a Circle object
+    // Create objects of child class and demonstrate polymorphic behavior
+    Shape* shape1 = new Rectangle(5, 3); // Create a rectangle object with width 5 and height 3
+    Shape* shape2 = new Rectangle(2, 4); // Create another rectangle object with width 2 and height 4
 
-    // Polymorphic behavior
-    Shape* shapePtr1 = &rectangle; // Point to Rectangle object using Shape pointer
-    Shape* shapePtr2 = &circle; // Point to Circle object using Shape pointer
+    // Display information about the first rectangle
+    shape1->display();
+    std::cout << "Area: " << shape1->area() << std::endl; // Display area of first rectangle
+    std::cout << "Perimeter: " << shape1->perimeter() << std::endl; // Display perimeter of first rectangle
 
-    // Output area and perimeter of Rectangle
-    std::cout << "Rectangle Area: " << shapePtr1->area() << std::endl;
-    std::cout << "Rectangle Perimeter: " << shapePtr1->perimeter() << std::endl;
+    // Display information about the second rectangle
+    shape2->display();
+    std::cout << "Area: " << shape2->area() << std::endl; // Display area of second rectangle
+    std::cout << "Perimeter: " << shape2->perimeter() << std::endl; // Display perimeter of second rectangle
 
-    // Output area and perimeter of Circle
-    std::cout << "Circle Area: " << shapePtr2->area() << std::endl;
-    std::cout << "Circle Perimeter: " << shapePtr2->perimeter() << std::endl;
+    // Delete dynamically allocated objects to avoid memory leaks
+    delete shape1;
+    delete shape2;
 
     return 0;
 }
