@@ -2,14 +2,14 @@
 // Created by Kylah Fulghum on 4/11/2024.
 //
 
-#ifndef PERSON_FRIENDCLASS_H
-#define PERSON_FRIENDCLASS_H
+#include "Employee.h"
 
-#include "PrimaryClass.h"
+#ifndef PAYROLLSYSTEM_H
+#define PAYROLLSYSTEM_H
 
-class FriendClass {
-
+class PayrollSystem {
+public:
+    double calculateSalary(const Employee& employee) const;
 };
 
-
-#endif //PERSON_FRIENDCLASS_H
+#endif // PAYROLLSYSTEM_H

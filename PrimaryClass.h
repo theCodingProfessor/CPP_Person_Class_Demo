@@ -1,20 +1,26 @@
 //Kaila Butt
 //Pair Programming
 
-#ifndef PRIMARYCLASS_H
-#define PRIMARYCLASS_H
+#include <string>
 
-class FriendClass;
+#ifndef EMPLOYEE_H
+#define EMPLOYEE_H
 
-class PrimaryClass {
-private:
-    int privateMember;
+class PayrollSystem; // Forward declaration
+
+class Employee {
+    friend class PayrollSystem;
 
 public:
-    PrimaryClass();
-    void display();
+    Employee(const std::string& name, int employeeID, double salary);
 
-    friend class FriendClass; 
+    void setSalary(double newSalary);
+
+private:
+    std::string name;
+    int employeeID;
+    double salary;
 };
 
-#endif // PRIMARYCLASS_H
+#endif // EMPLOYEE_H
+

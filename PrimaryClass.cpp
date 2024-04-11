@@ -1,12 +1,11 @@
 //Kaila Butt
 //Pair Programming
 
-#include "PrimaryClass.h"
-#include "FriendClass.h"
+#include "Employee.h"
 
-PrimaryClass::PrimaryClass() : privateMember(42) {}
+Employee::Employee(const std::string& name, int employeeID, double salary)
+    : name(name), employeeID(employeeID), salary(salary) {}
 
-void PrimaryClass::display() {
-    FriendClass fc;
-    fc.accessFriendData(*this);
+void Employee::setSalary(double newSalary) {
+    salary = newSalary;
 }
