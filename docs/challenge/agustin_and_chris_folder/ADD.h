@@ -19,5 +19,8 @@ public:
     }
 };
 
+class ncc_print{
+
+};
 #endif // ADD_H
 
