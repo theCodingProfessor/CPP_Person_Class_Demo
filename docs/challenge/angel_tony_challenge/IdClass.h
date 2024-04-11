@@ -7,11 +7,12 @@
 
 
 class ID {
-    private:
-    std::string idNumber;
+private:
+    int idNumber;
 
 public:
-    ID(const std::string& idNumber);
+    int getIDNumber() const;
+    ID(const int& idNumber);
     void displayID(Person & person);
 };
 
