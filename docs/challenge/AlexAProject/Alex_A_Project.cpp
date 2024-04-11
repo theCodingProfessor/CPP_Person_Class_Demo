@@ -6,8 +6,8 @@
 //
 
 #include "Alex_A_Project.h"
-
-Rogue::Rogue(const std::string& name) : _name(name) {}
+Rogue::Rogue(const std::string& name, const std::string& gameMaster)
+        : _name(name), _gameMaster(gameMaster) {}
 
 std::string Rogue::getName() const {
     return _name;

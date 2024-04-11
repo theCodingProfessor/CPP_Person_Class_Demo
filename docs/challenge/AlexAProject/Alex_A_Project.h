@@ -13,7 +13,7 @@ private:
     std::string _gameMaster;
 
 public:
-    Rogue(const std::string& name);
+    Rogue(const std::string& name, const std::string& gameMaster);
 
     std::string getName() const;
     std::string getGameMaster() const;
