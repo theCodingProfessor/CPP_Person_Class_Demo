@@ -1,3 +1,6 @@
+//Kaila Butt and Kylah Fulghum
+//Pair Programming
+
 #include "PrimaryClass.h"
 #include "FriendClass.h"
 
