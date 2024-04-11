@@ -4,7 +4,8 @@
 #ifndef PRIMARYCLASS_H
 #define PRIMARYCLASS_H
 
-class FriendClass; 
+class FriendClass;
+
 class PrimaryClass {
 private:
     int privateMember;
@@ -14,5 +15,6 @@ public:
     void display();
 
     friend class FriendClass; 
+};
 
 #endif // PRIMARYCLASS_H
