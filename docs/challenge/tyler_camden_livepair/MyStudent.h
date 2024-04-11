@@ -5,21 +5,21 @@
 #define PERSON_STUDENT_H
 
 #include <iostream>
-#include "CollegeCourse.h"
 
-class CollegeCourse; // Forward declaration of Course class
+class CollegeCourse; // Forward declaration of CollegeCourse class
 
 class MyStudent {
 private:
-    static const std::string defaultName; // Static member variable for default name
-    static const int defaultID; // Static member variable for default ID
+    static const std::string defaultName;
+    static const int defaultID;
     std::string name;
     int id;
 public:
     MyStudent();
     MyStudent(std::string name, int id);
-    std::string getName() const;
-    int getID() const;
+    [[nodiscard]] std::string getName() const;
+    [[nodiscard]] int getID() const;
+    static void displayEnrolledStudents(const CollegeCourse& course) ; // Member function to display enrolled students
 };
 
 #endif //PERSON_STUDENT_H
