@@ -1,3 +1,11 @@
+/*
+ * NCC Object-Oriented Programming
+ * Spring 2024 C++ Peer Programming poly.h
+ * Assignment to demonstrate polymorphism using a bank account system
+ * @author: Bhavnoor Saini (1354712), Santiago Ramirez (1346109)
+ * Coded with help from Copilot
+ * */
+
 #include <iostream>
 using namespace std;
 
@@ -35,7 +43,9 @@ class Credit : public BankAccount {
     public:
         Credit(double balanceAmount, int creditLimit): balanceAmount(balanceAmount), creditLimit(creditLimit){}
         double balance() override;
-        int creditUsage() { return balanceAmount / creditLimit; }
+        double creditUsage() { return balanceAmount / creditLimit; }
 };
+
+void credits(string student1, string student2);
 
 #endif

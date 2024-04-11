@@ -1,8 +1,9 @@
 /*
  * NCC Object-Oriented Programming
- * Spring 2024 C++ Lab Main
- * Assignment to 
+ * Spring 2024 C++ Peer Programming poly.cpp
+ * Assignment to demonstrate polymorphism using a bank account system
  * @author: Bhavnoor Saini (1354712), Santiago Ramirez (1346109)
+ * Coded with help from Copilot
  * */
 
 #include "poly.h"
