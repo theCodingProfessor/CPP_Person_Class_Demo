@@ -1,5 +1,3 @@
-
-## Active Branch Notes: Augstin was here
 #### Branch Name:
 update_2024_demo
 #### Branch Overview:
@@ -17,6 +15,7 @@ This will be a multiple-use active branch
 --- 
 #### Known Branches:
 live_demo_2024
+Camden_Welander_md_file
 
 ---
 # Known Retired Branch Data Follows
