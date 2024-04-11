@@ -8,16 +8,17 @@
 #include <string>
 
 class Rogue {
+public:
+    Rogue(const std::string& name, const std::string& gameMaster, const std::string& Religion);
+    std::string getName() const;
+    std::string getGameMaster() const;
+    std::string getReligion() const;
+
 private:
     std::string _name;
     std::string _gameMaster;
-
-public:
-    Rogue(const std::string& name, const std::string& gameMaster);
-
-    std::string getName() const;
-    std::string getGameMaster() const;
-    void setGameMaster(const std::string& gm);
+    std::string _Religion;
 };
+
 
 #endif //PERSON_ALEX_A_PROJECT_H

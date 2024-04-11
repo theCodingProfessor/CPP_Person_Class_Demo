@@ -6,8 +6,8 @@
 //
 
 #include "Alex_A_Project.h"
-Rogue::Rogue(const std::string& name, const std::string& gameMaster)
-        : _name(name), _gameMaster(gameMaster) {}
+Rogue::Rogue(const std::string& name, const std::string& gameMaster, const std::string& Religion)
+        : _name(name), _gameMaster(gameMaster), _Religion(Religion) {}
 
 std::string Rogue::getName() const {
     return _name;
@@ -17,6 +17,6 @@ std::string Rogue::getGameMaster() const {
     return _gameMaster;
 }
 
-void Rogue::setGameMaster(const std::string& gm) {
-    _gameMaster = gm;
+std::string Rogue::getReligion() const {
+    return _Religion;
 }
