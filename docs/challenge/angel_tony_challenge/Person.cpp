@@ -1,14 +1,15 @@
 #include "Person.h"
 #include "IdClass.h"
 
-using namespace std;
+Person::Person(std::string name, int year, std::string course)
+    : name(name), year(year), course(course) {}
 
-Person::Person(string name, int year, string course){
-    this.name = name;
-    this.year = year;
-    this.course = course;
+std::string Person::getName() const {
+    return name;
 }
 
-void Person::displayIdClass(const IdClass& ID){
-    cout << name << "'s ID number is: " << ID.getIdNumber
+void Person::displayId(const IdClass &id) {
+    std::cout << name << "'s ID number is: " << id.getIDNumber() << std::endl;
 }
+
+//git pull origin master to sync/merge
