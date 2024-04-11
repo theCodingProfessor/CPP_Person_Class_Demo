@@ -6,6 +6,13 @@
  * */
 
 #include "poly.h"
+using namespace std;
+
+//Prints a line with the credits of this program and the class it was made in
+void credits (string student1, string student2) {
+    cout << "This program was made by " << student1 << " & " << student2 << " in CSCE 306 at NCC." << endl;
+    return;
+}
 
 //Calls the Checking Accounts balance method and returns the balance amount
 double Checking::balance() {        
