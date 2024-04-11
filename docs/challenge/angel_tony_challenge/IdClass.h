@@ -3,17 +3,17 @@
 
 #include <iostream>
 #include <string>
-#include Person.h
 
+class Person;
 
-class ID {
+class IdClass {
 private:
     int idNumber;
 
 public:
+    IdClass(int idNumber);
     int getIDNumber() const;
-    ID(const int& idNumber);
-    void displayID(Person & person);
+    void displayID(const Person &person);
 };
 
 #endif
