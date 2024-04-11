@@ -24,12 +24,12 @@ private:
     static const std::string defaultCourseName; // Default course name
     std::string courseName; // Name of the course
     std::vector<MyStudent*> students; // Vector to store enrolled students
+    void displayStudents() const; // Method to display enrolled students
     friend class MyStudent; // MyStudent class is a friend class
 public:
     explicit CollegeCourse(std::string name); // Parameterized constructor
     explicit CollegeCourse(); // Default constructor
     void enrollStudent(MyStudent* student); // Method to enroll a student in the course
-    void displayStudents() const; // Method to display enrolled students
     void displayCourseName() const; // Method to display the course name
 };
 
