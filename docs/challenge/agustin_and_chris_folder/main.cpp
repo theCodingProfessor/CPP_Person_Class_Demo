@@ -2,7 +2,7 @@
 //NCC CSCE 306
 //Description: This is the main file that uses both the add.h that chris created
 //and the sub.h that agustin created. We used template programing to ensure
-//that any data type would work
+//that any data type would work.
 
 #include <iostream>
 #include "SUB.h"
