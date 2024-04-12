@@ -7,6 +7,7 @@
 // files. Outputs Authors name, year, course, and ID number. After authors info
 // is outputted user is allowed to input their info which then gets put into the
 // constructors outputting user info in the same format as authors.
+// documentation via chat.openai
 //--------------------------------------------------------------------------------
 
 
