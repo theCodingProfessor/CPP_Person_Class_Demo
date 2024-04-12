@@ -1,3 +1,16 @@
+//--------------------------------------------------------------------------------
+// Author: Antonio Contreras, Angel Montes
+// NCC CSCE 306 - OO Software Development
+// Pair Programming 3 of 4
+// Description: This project uses two .h files and three .cpp files with one being
+// the main. Main uses constructors and include statements from both .h and .cpp
+// files. Outputs Authors name, year, course, and ID number. After authors info
+// is outputted user is allowed to input their info which then gets put into the
+// constructors outputting user info in the same format as authors.
+//--------------------------------------------------------------------------------
+
+
+
 #include "Person.h"    // Include the definition of the Person class
 #include "IdClass.h"   // Include the definition of the IdClass class
 #include "Person.cpp"  // Include the implementation of the Person class
@@ -26,7 +39,7 @@ int main() {
 
     std::cout << "\n";
     std::cout << "\n";
-    
+
     // Display information about person2
     person2.displayInfo();
     // Display the ID of person2
