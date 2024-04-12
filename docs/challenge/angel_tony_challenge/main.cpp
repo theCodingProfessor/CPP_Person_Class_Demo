@@ -1,7 +1,7 @@
 //--------------------------------------------------------------------------------
 // Author: Antonio Contreras, Angel Montes
 // NCC CSCE 306 - OO Software Development
-// Pair Programming 3 of 4
+// Live Review 3
 // Description: This project uses two .h files and three .cpp files with one being
 // the main. Main uses constructors and include statements from both .h and .cpp
 // files. Outputs Authors name, year, course, and ID number. After authors info
