@@ -8,22 +8,20 @@
 
 
 
-
-
-
-
 #include <iostream>
 #include "Cars.h"
 #include "Honda.h"
 
 int main() {
-    Cars* cars = new Honda("blue", 2022);
-    std::cout << "Color: " << cars->getColor() << std::endl;
-    std::cout << "Year: " << cars->getYear() << std::endl;
-    cars->drive();
-    cars->honk();
-    delete cars;
+    Cars cars("blue", 2022);
+    Honda* honda = new Honda(cars, "V6");
+    std::cout << "Color: " << honda->getColor() << std::endl;
+    std::cout << "Year: " << honda->getYear() << std::endl;
+    honda->drive();
+    honda->honk();
+    delete honda;
 
     return 0;
 }
+
 
