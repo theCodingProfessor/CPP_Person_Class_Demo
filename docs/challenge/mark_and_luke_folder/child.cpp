@@ -1,5 +1,5 @@
 /**
- * File: child.h
+ * File: child.cpp
  * Author: Mark & Luke
  * Date: 4/11/24
  * Description: This header file defines the child class Rectangle, which inherits
