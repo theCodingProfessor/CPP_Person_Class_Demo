@@ -9,12 +9,12 @@ This is a simple Baseball Information System.
 ## File Structure
 ```
 .
-├── bin
-│   └── player.out
+├── a.out
 ├── main.cpp
+├── Person.cpp
+├── Person.h
 ├── player.cpp
 ├── player.h
-├── player.h.gch
 └── README.md
 ```
 
