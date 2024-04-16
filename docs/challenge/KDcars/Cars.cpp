@@ -7,10 +7,10 @@
 
 
 
-#include "cars.h"
+#include "Cars.h"
 #include <iostream>
 
-Cars::Cars(const std::string& color, const std::string& year) : color(color), year(year) {}
+Cars::Cars(const std::string& color, int year) : color(color), year(year) {}
 
 void Cars::honk() const {
     std::cout << "Honk! Honk!" << std::endl;
@@ -20,6 +20,6 @@ std::string Cars::getColor() const {
     return color;
 }
 
-std::string Cars::getYear() const {
+int Cars::getYear() const {
     return year;
 }

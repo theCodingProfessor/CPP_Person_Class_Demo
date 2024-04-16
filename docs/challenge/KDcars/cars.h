@@ -6,23 +6,22 @@
 //Code Assistance from ChatGPT
 
 
-#ifndef CARS_H
-#define CARS_H
+#ifndef CARs_H
+#define CARs_H
 
 #include <string>
 
 class Cars {
 protected:
     std::string color;
-    std::string year;
+    int year;
 public:
-    Cars(const std::string& color, const std::string& year);
+    Cars(const std::string& color, int year);
     virtual ~Cars() {}
     virtual void drive() const = 0; 
     virtual void honk() const; 
-
     std::string getColor() const;
-    std::string getYear() const;
+    int getYear() const;
 };
 
 #endif
