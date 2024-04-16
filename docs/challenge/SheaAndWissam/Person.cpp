@@ -37,23 +37,3 @@ void Person::setAge(int age) {
 void Person::displayInfo() const {
     std::cout << "Name: " << m_name << ", Age: " << m_age << std::endl;
 }
-
-int main() {
-    // Create a Person object
-    Person person("Shea", 20);
-
-    // Display information about the person
-    person.displayInfo();
-
-    // Update person's age
-    //person.setAge(20);
-
-    Person person2("Wissam", 20);
-
-    person2.displayInfo();
-
-    // Display updated information
-    //std::cout << "Updated age: " << person.getAge() << std::endl;
-
-    return 0;
-}
