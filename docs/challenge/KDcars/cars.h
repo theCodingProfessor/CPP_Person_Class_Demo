@@ -13,15 +13,16 @@
 
 class Cars {
 protected:
-    std::string make;
-    std::string model;
+    std::string color;
+    std::string year;
 public:
-    Cars(const std::string& make, const std::string& model);
+    Cars(const std::string& color, const std::string& year);
     virtual ~Cars() {}
-    virtual void drive() const = 0; // Pure virtual function
-    virtual void honk() const; // Virtual function
-    std::string getMake() const;
-    std::string getModel() const;
+    virtual void drive() const = 0; 
+    virtual void honk() const; 
+
+    std::string getColor() const;
+    std::string getYear() const;
 };
 
 #endif

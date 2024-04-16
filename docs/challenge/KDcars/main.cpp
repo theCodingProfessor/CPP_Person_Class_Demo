@@ -4,8 +4,8 @@
 
 int main() {
     Cars* cars = new Honda("Civic");
-    std::cout << "Make: " << cars->getMake() << std::endl;
-    std::cout << "Model: " << cars->getModel() << std::endl;
+    std::cout << "Make: " << cars->getColor() << std::endl;
+    std::cout << "Model: " << cars->getYear() << std::endl;
     cars->drive();
     cars->honk();
     delete cars;

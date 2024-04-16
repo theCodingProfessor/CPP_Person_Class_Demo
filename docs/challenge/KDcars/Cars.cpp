@@ -10,16 +10,16 @@
 #include "cars.h"
 #include <iostream>
 
-Cars::Cars(const std::string& make, const std::string& model) : make(make), model(model) {}
+Cars::Cars(const std::string& color, const std::string& year) : color(color), year(year) {}
 
 void Cars::honk() const {
     std::cout << "Honk! Honk!" << std::endl;
 }
 
-std::string Cars::getMake() const {
-    return make;
+std::string Cars::getColor() const {
+    return color;
 }
 
-std::string Cars::getModel() const {
-    return model;
+std::string Cars::getYear() const {
+    return year;
 }
