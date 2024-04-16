@@ -3,7 +3,6 @@
 *  Assignment: Live Coding 3
 *  Partner: Will G.
 *  Description: this is the h file for the primary BankAccount class. 
-*
 *  Code assisted by ChatGPT.
 */
 
