@@ -26,6 +26,7 @@ int main() {
 
     std::cout << "Color: " << car.getColor() << std::endl;
     std::cout << "Year: " << car.getYear() << std::endl;
+    std::cout << "Engine: " << civic.get_engine_type() << std::endl;
 
 
     return 0;
