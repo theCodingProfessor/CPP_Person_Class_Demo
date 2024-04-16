@@ -3,9 +3,9 @@
 #include "Honda.h"
 
 int main() {
-    Cars* cars = new Honda("Civic");
-    std::cout << "Make: " << cars->getColor() << std::endl;
-    std::cout << "Model: " << cars->getYear() << std::endl;
+    Cars* cars = new Honda("blue", 2022);
+    std::cout << "Color: " << cars->getColor() << std::endl;
+    std::cout << "Year: " << cars->getYear() << std::endl;
     cars->drive();
     cars->honk();
     delete cars;
