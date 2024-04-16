@@ -6,10 +6,10 @@
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
 
-class PayrollSystem; // Forward declaration
+class FriendClass; // Forward declaration
 
 class Employee {
-    friend class PayrollSystem;
+    friend class FriendClass;
 
 public:
     Employee(const std::string& name, int employeeID, double salary);

@@ -1,7 +1,7 @@
 //Kaila Butt
 //Pair Programming
 
-#include "Employee.h"
+#include "PrimaryClass.h"
 
 Employee::Employee(const std::string& name, int employeeID, double salary)
     : name(name), employeeID(employeeID), salary(salary) {}
