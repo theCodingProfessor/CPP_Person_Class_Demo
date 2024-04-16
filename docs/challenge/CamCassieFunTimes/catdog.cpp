@@ -1,6 +1,6 @@
-//Cassandra Whittenhall
-//CSCE 306
-//Source: code referenced from https://chat.openai.com/
+// Cassandra Whittenhall
+// CSCE 306
+// Source: code referenced from https://chat.openai.com/
 
 #include "catdog.h"
 #include <iostream>
