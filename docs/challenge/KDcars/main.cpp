@@ -14,10 +14,10 @@
 
 #include <iostream>
 #include "Cars.h"
-#include "Honda.h"
+#include "honda.h"
 
 int main() {
-    Cars* cars = new Honda("blue", 2022);
+    Cars* cars = new honda("blue", 2022);
     std::cout << "Color: " << cars->getColor() << std::endl;
     std::cout << "Year: " << cars->getYear() << std::endl;
     cars->drive();
@@ -26,3 +26,4 @@ int main() {
 
     return 0;
 }
+
