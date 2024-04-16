@@ -1,3 +1,5 @@
+//Created by Camden Gugel and Cassandra Whittenhall
+
 #include "Animal.h"
 #include "CatDog.h"
 #include <string>
