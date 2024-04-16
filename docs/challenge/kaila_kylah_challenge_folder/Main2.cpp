@@ -6,7 +6,6 @@
 #include <iostream>
 #include "PrimaryClass.h"
 
-
 int main() {
    
     Employee employee("John Doe", 1001, 50000.0);
