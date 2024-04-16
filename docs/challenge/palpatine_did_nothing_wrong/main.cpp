@@ -13,25 +13,64 @@
 #include "ATM.h"
 #include "ATM.cpp"
 
+#include <iostream>
+#include "BankAccount.h"
+#include "ATM.h"
+
 int main() {
-    // Create BankAccount object
-    BankAccount account("123456789", 1234, 1000);
+    int pin;
+    std::cout << "Enter your PIN: ";
+    std::cin >> pin;
+    
+    // Create a bank account
+    BankAccount account("123456789", 1000.0, pin);
 
-    // Create ATM object
-    ATM atm("ATM001", "Main Street");
+    // Create an ATM
+    ATM atm;
 
-    // Display balance
-    atm.displayBalance(account);
+    char choice;
+    do {
+        std::cout << "\nChoose an option:" << std::endl;
+        std::cout << "1. Deposit funds" << std::endl;
+        std::cout << "2. Withdraw funds" << std::endl;
+        std::cout << "3. Check balance" << std::endl;
+        std::cout << "4. Sign off" << std::endl;
+        std::cout << "Enter your choice: ";
+        std::cin >> choice;
 
-    // Withdraw
-    atm.withdraw(account, 500);
-    std::cout << "After withdrawal: ";
-    atm.balanceOnly(account);
-
-    // Deposit
-    atm.deposit(account, 200);
-    std::cout << "After deposit: ";
-    atm.balanceOnly(account);
+        switch (choice) {
+            case '1': {
+                double amount;
+                std::cout << "Enter the amount to deposit: ";
+                std::cin >> amount;
+                std::cout << "Enter your PIN: ";
+                std::cin >> pin;
+                atm.depositToAccount(amount, pin);
+                break;
+            }
+            case '2': {
+                double amount;
+                std::cout << "Enter the amount to withdraw: ";
+                std::cin >> amount;
+                std::cout << "Enter your PIN: ";
+                std::cin >> pin;
+                atm.withdrawFromAccount(amount, pin);
+                break;
+            }
+            case '3': {
+                double balance = atm.checkBalance(account, pin);
+                if (balance >= 0) {
+                    std::cout << "Current balance: $" << balance << std::endl;
+                }
+                break;
+            }
+            case '4':
+                std::cout << "Signing off..." << std::endl;
+                break;
+            default:
+                std::cout << "Invalid choice!" << std::endl;
+        }
+    } while (choice != '4');
 
     return 0;
 }

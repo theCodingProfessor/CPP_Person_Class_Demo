@@ -18,24 +18,23 @@ class ATM; // Forward declaration of ATM class
 class BankAccount {
 private:
     std::string accountNumber;
-    int PIN; // Add PIN number
+    int pin;
     double balance;
 
 public:
-    // Constructor
-    BankAccount(std::string accNum, int pin, double bal);
+    BankAccount(std::string accNumber, double initialBalance, int pin);
 
-    // Member functions
-    void deposit(double amount);
-    void withdraw(double amount, int enteredPin);
-    double checkBalance();
-    bool validateAccountNumber(std::string accNum); // Validate account number
+    // Function to deposit money into the account
+    void deposit(double amount, int pin);
 
-    // Friend declaration for ATM class
+    // Function to withdraw money from the account
+    void withdraw(double amount, int pin);
+
+    // Function to check the account balance
+    double getBalance(int pin);
+
+    // Function to allow ATM class to access private members
     friend class ATM;
 };
 
 #endif // BANKACCOUNT_H
-
-
-
