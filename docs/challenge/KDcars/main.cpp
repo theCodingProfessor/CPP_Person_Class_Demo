@@ -15,14 +15,12 @@
 #include "Honda.cpp"
 
 int main() {
-    Cars car("Red", 2022);
-    honda civic(car, "V8");
-
-    civic.honk();
-
-    std::cout << "Color: " << car.getColor() << std::endl;
-    std::cout << "Year: " << car.getYear() << std::endl;
-
+    Cars* cars = new Honda("blue", 2022);
+    std::cout << "Color: " << cars->getColor() << std::endl;
+    std::cout << "Year: " << cars->getYear() << std::endl;
+    cars->drive();
+    cars->honk();
+    delete cars;
 
     return 0;
 }
