@@ -1,8 +1,8 @@
 //Kaila Butt and Kylah Fulghum
 //Pair Programming
 
-#include "FriendClass.h"
 #include <iostream>
+#include "FriendClass.h"
 #include "PrimaryClass.h"
 
 int main() {
