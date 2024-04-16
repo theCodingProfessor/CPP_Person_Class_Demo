@@ -1,3 +1,14 @@
+//Header File
+//File Name: honda.cpp
+//Author: Dylan
+//Assigment: LiveCode3
+//Code Desc: This is a header file for a honda class
+//Code Assistance from ChatGPT
+//Date: 4-16-2024
+
+
+
+
 #include <iostream>
 #include <string>
 #include <vector>

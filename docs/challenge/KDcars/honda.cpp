@@ -1,3 +1,12 @@
+//CPP File
+//File Name: honda.cpp
+//Author: Dylan
+//Assigment: LiveCode3
+//Code Desc: This is a C++ file for a honda class
+//Code Assistance from ChatGPT
+//Date: 4-16-2024
+
+
 #include <string>
 #include <iostream>
 #include <utility>
