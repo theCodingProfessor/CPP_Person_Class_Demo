@@ -19,9 +19,7 @@ protected:
     int year;
 public:
     Cars(const std::string& color, int year);
-    virtual ~Cars() {}
-    virtual void drive() const = 0; 
-    virtual void honk() const; 
+    void honk() const; 
     std::string getColor() const;
     int getYear() const;
 };

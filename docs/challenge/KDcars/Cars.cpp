@@ -9,19 +9,23 @@
 
 
 
-#include "Cars.h"
+#include "cars.h"
 #include <iostream>
 
+// Constructor definition
 Cars::Cars(const std::string& color, int year) : color(color), year(year) {}
 
-void Cars::honk() const {
-    std::cout << "Honk! Honk!" << std::endl;
-}
-
+// Getter for color
 std::string Cars::getColor() const {
     return color;
 }
 
+// Getter for year
 int Cars::getYear() const {
     return year;
+}
+
+// Default implementation of honk method
+void Cars::honk() const {
+    std::cout << "Generic honk sound" << std::endl;
 }
