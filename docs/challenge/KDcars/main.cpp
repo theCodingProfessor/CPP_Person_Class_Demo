@@ -9,17 +9,21 @@
 
 
 #include <iostream>
-#include "Cars.h"
-#include "Honda.h"
+#include "cars.h"
+#include "honda.h"
+
+
+
 
 int main() {
-    Cars cars("blue", 2022);
-    Honda* honda = new Honda(cars, "V6");
-    std::cout << "Color: " << honda->getColor() << std::endl;
-    std::cout << "Year: " << honda->getYear() << std::endl;
-    honda->drive();
-    honda->honk();
-    delete honda;
+    Cars car("Red", 2022);
+    honda civic(car, "V8");
+
+    civic.honk();
+
+    std::cout << "Color: " << car.getColor() << std::endl;
+    std::cout << "Year: " << car.getYear() << std::endl;
+
 
     return 0;
 }
