@@ -1,36 +1,15 @@
 /**
- * File: parent.h
+ * File: parent.cpp
  * Author: Mark & Luke
  * Date: 4/11/24
- * Description: This header file defines the parent class Shape, which represents
- * geometric shapes. It contains pure virtual functions for calculating the area
- * and perimeter of a shape, as well as a virtual function for displaying shape
- * information.
+ * Description: This file contains the implementation of the virtual functions declared
+ * in the parent class Shape. Since these functions are pure virtual, this file contains
+ * empty implementations. Each child class will override these functions with their
+ * specific implementations.
  */
 
-#ifndef PARENT_H
-#define PARENT_H
+#include <iostream>
+#include "parent.h"
 
-// Parent class representing geometric shapes
-class Shape {
-public:
-    /**
-     * @brief Virtual function for calculating the area of the shape.
-     * @return The area of the shape.
-     */
-    virtual double area() const = 0;
-
-    /**
-     * @brief Virtual function for calculating the perimeter of the shape.
-     * @return The perimeter of the shape.
-     */
-    virtual double perimeter() const = 0;
-
-    /**
-     * @brief Virtual function for displaying shape information.
-     */
-    virtual void display() const = 0;
-};
-
-#endif // PARENT_H
-
+// Empty implementation for virtual functions
+// Each child class will override these functions
