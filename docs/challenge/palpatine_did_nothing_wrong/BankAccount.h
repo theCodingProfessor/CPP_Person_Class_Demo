@@ -6,11 +6,11 @@
 *  Code assisted by ChatGPT.
 */
 
-#ifndef BANKACCOUNT_H
-#define BANKACCOUNT_H
-
 #include <iostream>
 #include <string>
+
+#ifndef BANKACCOUNT_H
+#define BANKACCOUNT_H
 
 class ATM; // Forward declaration of ATM class
 
