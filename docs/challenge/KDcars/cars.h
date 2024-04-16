@@ -3,23 +3,27 @@
 //Author: Khalid
 //Assigment: LiveCode3
 //Code Desc: This is a header file for a cars class
+//Code Assistance from ChatGPT
+//Date: 4-16-2024
 
-#ifndef CARS_H
-#define CARS_H
+
+
+#ifndef CARs_H
+#define CARs_H
 
 #include <string>
 
 class Cars {
 protected:
-    std::string make;
-    std::string model;
+    std::string color;
+    int year;
 public:
-    Cars(const std::string& make, const std::string& model);
+    Cars(const std::string& color, int year);
     virtual ~Cars() {}
-    virtual void drive() const = 0; // Pure virtual function
-    virtual void honk() const; // Virtual function
-    std::string getMake() const;
-    std::string getModel() const;
+    virtual void drive() const = 0; 
+    virtual void honk() const; 
+    std::string getColor() const;
+    int getYear() const;
 };
 
 #endif
