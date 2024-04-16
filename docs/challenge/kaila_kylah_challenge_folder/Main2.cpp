@@ -4,8 +4,8 @@
 #include "docs/challenge/kaila_kylah_challenge_folder/PrimaryClass.h"
 #include "FriendClass.h"
 #include <iostream>
-#include "Employee.h"
-#include "PayrollSystem.h"
+#include "PrimaryClass.h"
+
 
 int main() {
    
