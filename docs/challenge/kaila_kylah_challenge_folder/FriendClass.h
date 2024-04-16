@@ -2,7 +2,7 @@
 // Created by Kylah Fulghum on 4/11/2024.
 //
 
-#include "Employee.h"
+#include "PrimaryClass.h"
 
 #ifndef PAYROLLSYSTEM_H
 #define PAYROLLSYSTEM_H
