@@ -1,5 +1,5 @@
 /**
- * File: child.cpp
+ * File: child.h
  * Author: Mark & Luke
  * Date: 4/11/24
  */
