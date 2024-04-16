@@ -3,12 +3,31 @@
 
 #include "docs/challenge/kaila_kylah_challenge_folder/PrimaryClass.h"
 #include "FriendClass.h"
+#include <iostream>
+#include "Employee.h"
+#include "PayrollSystem.h"
 
 int main() {
-    PrimaryClass pc;
-    FriendClass fc;
-    
-    pc.display();
-    
+   
+    Employee employee("John Doe", 1001, 50000.0);
+
+    std::cout << "Employee Details:" << std::endl;
+    std::cout << "Name: " << employee.name << std::endl;
+    std::cout << "Employee ID: " << employee.employeeID << std::endl;
+    std::cout << "Salary: $" << employee.salary << std::endl;
+
+ 
+    PayrollSystem payrollSystem;
+
+    double annualSalary = payrollSystem.calculateSalary(employee);
+    std::cout << "\nAnnual Salary: $" << annualSalary << std::endl;
+
+
+    employee.setSalary(55000.0);
+
+
+    annualSalary = payrollSystem.calculateSalary(employee);
+    std::cout << "\nUpdated Annual Salary: $" << annualSalary << std::endl;
+
     return 0;
 }
