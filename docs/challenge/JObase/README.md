@@ -4,8 +4,19 @@ This is a simple Baseball Information System.
 
 ## TODOs
 2. Create a Person class and Player class.
-3. Make functions.
 4. Integrate it.
+
+## File Structure
+```
+.
+├── bin
+│   └── player.out
+├── main.cpp
+├── player.cpp
+├── player.h
+├── player.h.gch
+└── README.md
+```
 
 ## Team Description
 - [Om Sharma](https://linkedin.com/in/ompiepy)
