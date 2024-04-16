@@ -1,7 +1,6 @@
 //Kaila Butt and Kylah Fulghum
 //Pair Programming
 
-#include "docs/challenge/kaila_kylah_challenge_folder/PrimaryClass.h"
 #include "FriendClass.h"
 #include <iostream>
 #include "PrimaryClass.h"
