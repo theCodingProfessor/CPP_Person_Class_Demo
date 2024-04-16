@@ -1,21 +1,22 @@
 #ifndef PERSON_H
 #define PERSON_H
 
-using namespace std;
+#include <iostream>
+#include <string>
 
 class IdClass;
 
-class Person{
+class Person {
 private:
-    string name;
+    std::string name;
     int year;
-    string course;
-    // friend class IdClass
-public:
-    Person(string name, int year, string course);
-    void displayId(const IdClass& ID);
-    friend class IdClass;
+    std::string course;
 
+public:
+    Person(std::string name, int year, std::string course);
+    std::string getName() const;
+    void displayId(const IdClass &id);
+    friend class IdClass;
 };
 
 #endif

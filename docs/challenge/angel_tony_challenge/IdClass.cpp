@@ -1,14 +1,13 @@
 #include "IdClass.h"
+#include "Person.h"
 
+IdClass::IdClass(int idNumber) : idNumber(idNumber) {}
 
-ID::ID(const int& idNumber) : idNumber(idNumber) {}
-
-void ID::displayID(Person & person) {
+void IdClass::displayID(const Person &person) {
     std::cout << "ID Number: " << idNumber << std::endl;
-    std::cout << "Associated with: ";
-    person.displayInfo();
+    std::cout << "Associated with: CSCE306" << std::endl;
 }
 
-int ID::getIDNumber() const {
+int IdClass::getIDNumber() const {
     return idNumber;
 }

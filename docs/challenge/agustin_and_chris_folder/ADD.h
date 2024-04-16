@@ -4,17 +4,10 @@
 
 #ifndef ADD_H
 #define ADD_H
-
 template <typename T>
 class Add {
-private:
-    T a;
-    T b;
-
 public:
-    Add(T x, T y) : a(x), b(y) {}
-
-    T getResult() const {
+     T add(T a, T b) {
         return a + b;
     }
 };
