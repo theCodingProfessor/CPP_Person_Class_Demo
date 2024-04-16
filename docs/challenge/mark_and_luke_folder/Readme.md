@@ -3,5 +3,4 @@ Mark Bavaro
 
 Code Project: Inheritence, Parent Child Class
 
-Description
-This header file defines the child class Rectangle, which inherits from the parent class Shape. It represents a rectangle shape and provides implementations for calculating its area, perimeter, and displaying its information.
+Description: This file contains the main function demonstrating the usage of the Shape class and its derived class Rectangle. It creates objects of the Rectangle class, demonstrates polymorphic behavior by using pointers to Shape, and displays information about the rectangles. ChatGPT was used for assistance in parts of this assignment.
