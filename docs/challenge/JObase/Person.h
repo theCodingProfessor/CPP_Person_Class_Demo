@@ -6,15 +6,15 @@ using namespace std;
 
 class Person{
     public:
-        Person(string, int, string);
+        Person();
 
         string get_name();
         int get_age();
         string get_gender();
 
-        int set_name(string name);
-        int set_age(int age);
-        int set_gender(string gender);
+        void set_name();
+        void set_age();
+        void set_gender();
 
         void toString();
 
@@ -25,4 +25,4 @@ class Person{
         string gender;
 };
 
-#endif PERSON_H
+#endif // PERSON_H
