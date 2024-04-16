@@ -9,7 +9,7 @@
 
 
 
-#include "cars.h"
+#include "Cars.h"
 #include <iostream>
 
 // Constructor definition
@@ -27,5 +27,5 @@ int Cars::getYear() const {
 
 // Default implementation of honk method
 void Cars::honk() const {
-    std::cout << "Generic honk sound" << std::endl;
+    std::cout << "HONK HONK" << std::endl;
 }
