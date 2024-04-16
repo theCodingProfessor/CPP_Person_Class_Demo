@@ -3,7 +3,6 @@
 //
 
 #include "FriendClass.h"
-#include "PrimaryClass.h"
 
 double PayrollSystem::calculateSalary(const Employee& employee) const {
     // Example calculation (replace with actual implementation)
