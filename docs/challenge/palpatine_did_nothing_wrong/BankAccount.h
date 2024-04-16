@@ -18,7 +18,7 @@ class ATM; // Forward declaration of ATM class
 class BankAccount {
 private:
     std::string accountNumber;
-    int PIN;
+    int PIN; // Add PIN number
     double balance;
 
 public:
@@ -37,10 +37,5 @@ public:
 
 #endif // BANKACCOUNT_H
 
-class BankAccount {
-private:
-    std::string accountNumber;
-    int pin; // Add PIN number
-    double balance;
-};
+
 
