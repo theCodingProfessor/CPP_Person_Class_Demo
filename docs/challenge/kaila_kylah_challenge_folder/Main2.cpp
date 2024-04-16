@@ -10,12 +10,11 @@ int main() {
    
     Employee employee("John Doe", 1001, 50000.0);
 
-    std::cout << "Employee Details:" << std::endl;
-    std::cout << "Name: " << employee.name << std::endl;
-    std::cout << "Employee ID: " << employee.employeeID << std::endl;
-    std::cout << "Salary: $" << employee.salary << std::endl;
+   std::cout << "Employee Details:" << std::endl;
+std::cout << "Name: " << employee.getName() << std::endl;
+std::cout << "Employee ID: " << employee.getEmployeeID() << std::endl;
+std::cout << "Salary: $" << employee.getSalary() << std::endl;
 
- 
     PayrollSystem payrollSystem;
 
     double annualSalary = payrollSystem.calculateSalary(employee);
