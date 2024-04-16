@@ -1,8 +1,10 @@
 // Shea and Wissam
-// Wissiam did this one
-// CSCE 306: software development Live coding 3:Object oriented inheritance pair programming assignment
-// Code desc: Person.h: Defines the Person class with constructors, destructors, and methods to manage 
-// and display a person's name and age, encapsulating data access and modification.
+// Shea did this one
+// CSCE 306 Live coding 3: Object Inheritance Pair Programming Assignment
+// Code Desc: This C++ header file defines a Person class which models a person with attributes for name and age.
+// The attributes m_name and m_age are private, meaning they cannot be accessed directly outside the class. 
+//This encapsulation ensures that the internal state of the person can only be modified through the class's 
+//public functions.
 // ChatGPT assisted
 
 #ifndef PERSON_H
