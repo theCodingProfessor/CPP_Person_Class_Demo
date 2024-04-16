@@ -1,0 +1,20 @@
+Tyler McCoy and Camden Welander
+The Friend File Class Assignment
+---------------------------------------------
+This project demonstrates the implementation of a friend class system.
+It involves two main classes: CollegeCourse and MyStudent.
+The purpose of this system is to showcase how a friend class can access private data and methods of another class.
+
+CollegeCourse:
+- Manages enrollment of students.
+- Displays enrolled students.
+- Allows access to its private methods by the MyStudent class as a friend.
+
+MyStudent:
+- Represents a student with a name and ID.
+- Can display enrolled students in a course by accessing private information of the CollegeCourse class as a friend.
+
+Implementation Details:
+- The CollegeCourse class establishes a friend class relationship with MyStudent, allowing the latter to access private members of the former.
+- MyStudent utilizes this friendship to display enrolled students in a course via a static method displayEnrolledStudents.
+
