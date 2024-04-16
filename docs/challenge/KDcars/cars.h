@@ -3,6 +3,8 @@
 //Author: Khalid
 //Assigment: LiveCode3
 //Code Desc: This is a header file for a cars class
+//Code Assistance from ChatGPT
+
 
 #ifndef CARS_H
 #define CARS_H
