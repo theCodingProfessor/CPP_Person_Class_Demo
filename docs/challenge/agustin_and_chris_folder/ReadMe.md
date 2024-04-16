@@ -1,3 +1,9 @@
+//Authors: Agustin Chavez and Chris Sotirovski
+//NCC CSCE 306
+//We have selected the "create_template" challenge
+//Description: We have two files ADD and SUB that are both linked to our main file. This is the main file uses both the add.h that chris created and the sub.h that agustin created. We used template programing to ensure that any data type would work.The program we made is a basic calculator application.
+
+
 
 ## Active Branch Notes: 
 #### Branch Name:

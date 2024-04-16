@@ -33,6 +33,19 @@ public:
     double getBalance(int pin);
 
     // Function to allow ATM class to access private members
+
+   
+public:
+    // Constructor
+    BankAccount(std::string accNum, int pin, double bal);
+
+    // Member functions
+    void deposit(double amount);
+    void withdraw(double amount, int enteredPin);
+    double checkBalance();
+    bool validateAccountNumber(std::string accNum); // Validate account number
+
+    // Friend declaration for ATM class
     friend class ATM;
 };
 

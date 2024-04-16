@@ -2,10 +2,6 @@
  * File: parent.h
  * Author: Mark & Luke
  * Date: 4/11/24
- * Description: This header file defines the parent class Shape, which represents
- * geometric shapes. It contains pure virtual functions for calculating the area
- * and perimeter of a shape, as well as a virtual function for displaying shape
- * information.
  */
 
 #ifndef PARENT_H

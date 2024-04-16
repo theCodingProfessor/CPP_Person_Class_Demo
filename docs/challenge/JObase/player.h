@@ -7,11 +7,13 @@
 // --------------------------------------------------------------------
 
 # include <iostream>
+# include <string>
+# include "Person.h"
 
 #ifndef PLAYER_H
 #define PLAYER_H
 
-class Player{
+class Player: private Person{
     private:
         std::string teamName;
         float battingAverage;

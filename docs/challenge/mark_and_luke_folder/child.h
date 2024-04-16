@@ -2,9 +2,6 @@
  * File: child.h
  * Author: Mark & Luke
  * Date: 4/11/24
- * Description: This header file defines the child class Rectangle, which inherits
- * from the parent class Shape. It represents a rectangle shape and provides
- * implementations for calculating its area, perimeter, and displaying its information.
  */
 
 #ifndef CHILD_H
