@@ -13,10 +13,6 @@
 #include "ATM.h"
 #include "ATM.cpp"
 
-#include <iostream>
-#include "BankAccount.h"
-#include "ATM.h"
-
 int main() {
     int pin;
     std::cout << "Enter your PIN: ";
