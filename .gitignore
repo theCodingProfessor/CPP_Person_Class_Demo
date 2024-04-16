@@ -3,3 +3,4 @@
 # IntelliJ IDEA specific files and directories
 .idea/
 *.iml
+docs/challenge/the_tarnished/output
