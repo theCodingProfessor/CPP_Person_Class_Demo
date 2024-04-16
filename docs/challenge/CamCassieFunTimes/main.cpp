@@ -1,5 +1,5 @@
-//Created by Camden Gugel and Cassandra Whittenhall
-//Some code implemented from chat.openai.com
+// Created by Camden Gugel and Cassandra Whittenhall
+// Some code implemented from chat.openai.com
 
 #include "Animal.h"
 #include "CatDog.h"
