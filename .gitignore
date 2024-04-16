@@ -3,3 +3,14 @@
 # IntelliJ IDEA specific files and directories
 .idea/
 *.iml
+# Intermediage files
+*.gch
+*.h.gch
+
+# Compiled files
+.out
+.exe
+
+#VS Code specific files
+.vscode/
+docs/challenge/the_tarnished/output

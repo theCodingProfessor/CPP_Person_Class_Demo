@@ -17,7 +17,8 @@ Player::Player(){
 };
 
 void Player::displayPlayerInfo(){
-    std::cout << "Team Name: " << getTeamName() << std::endl;
-    std::cout << "Batting Average: " << getBattingAverage() << std::endl;
-    std::cout << "Home Runs: " << getHomeRuns() << std::endl;
+    Player::toString();
+    std::cout << "\tTeam Name: " << getTeamName() << std::endl;
+    std::cout << "\tBatting Average: " << getBattingAverage() << std::endl;
+    std::cout << "\tHome Runs: " << getHomeRuns() << std::endl;
 }
