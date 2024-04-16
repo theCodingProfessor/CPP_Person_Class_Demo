@@ -1,3 +1,17 @@
+//Header File
+//File Name: main.cpp
+//Author: Dylan and Khalid
+//Assigment: LiveCode3
+//Code Desc: This is the main file
+//Code Assistance from ChatGPT
+//Date: 4-16-2024
+
+
+
+
+
+
+
 #include <iostream>
 #include "Cars.h"
 #include "Honda.h"
