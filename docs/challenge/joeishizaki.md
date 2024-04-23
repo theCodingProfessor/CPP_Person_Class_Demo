@@ -1,1 +1,0 @@
-my name is joe ishizaki
